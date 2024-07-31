@@ -7,7 +7,7 @@
              Shell.BackgroundColor="{StaticResource LightBlue}">
 
     <VerticalStackLayout
-        Padding="30,0"
+        Padding="30,60,30,30"
         Spacing="25">
 
         <!-- Decimal display label -->
@@ -16,14 +16,15 @@
             Text="Decimal: 0"
             Style="{StaticResource SubHeadline}"
             HorizontalOptions="Center"
-            Margin="0,20,0,10" />
+            Margin="0,40,0,20" />
 
         <!-- Grid for binary input -->
         <Grid
             HorizontalOptions="Center"
             VerticalOptions="Center"
             ColumnSpacing="10"
-            RowSpacing="10">
+            RowSpacing="10"
+            Margin="0,20,0,0">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="Auto" />
                 <ColumnDefinition Width="Auto" />
