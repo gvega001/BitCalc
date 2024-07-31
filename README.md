@@ -1,12 +1,12 @@
 # BitCalc
 
-![BitCalc Logo](https://via.placeholder.com/150)  <!-- Placeholder for logo, replace with actual URL if available -->
+![BitCalc Logo](icon.png) <!-- Placeholder for logo, replace with actual URL if available -->
 
 ## Overview
 BitCalc is a simple and efficient binary calculator designed to perform various binary operations with ease. Whether you're a student, developer, or just someone who needs to work with binary numbers, BitCalc provides an intuitive and user-friendly interface to meet your needs.
 
 ## Features
-- **Binary Addition:** Perform addition of binary numbers.
+- **Binary Addition:** Perform the addition of binary numbers.
 - **Binary Subtraction:** Subtract one binary number from another.
 - **Binary Multiplication:** Multiply two binary numbers.
 - **Binary Division:** Divide one binary number by another.
