@@ -13,8 +13,8 @@
             <Setter Property="TextColor" Value="White"/>
             <Setter Property="FontSize" Value="24"/>
             <Setter Property="Margin" Value="5"/>
-            <Setter Property="HeightRequest" Value="80"/>
-            <Setter Property="WidthRequest" Value="80"/>
+            <Setter Property="HeightRequest" Value="105"/>
+            <Setter Property="WidthRequest" Value="105"/>
         </Style>
         <Style x:Key="Headline" TargetType="Label">
             <Setter Property="FontSize" Value="24"/>

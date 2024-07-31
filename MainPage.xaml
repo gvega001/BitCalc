@@ -22,62 +22,142 @@
         <HorizontalStackLayout
             Spacing="10"
             HorizontalOptions="Center">
-            <Button
-                x:Name="Button0"
-                Text="0"
-                BackgroundColor="Black"
-                TextColor="White"
-                Clicked="OnBinaryButtonClicked"
-                Style="{StaticResource ButtonStyle}" />
-            <Button
-                x:Name="Button1"
-                Text="0"
-                BackgroundColor="Black"
-                TextColor="White"
-                Clicked="OnBinaryButtonClicked"
-                Style="{StaticResource ButtonStyle}" />
-            <Button
-                x:Name="Button2"
-                Text="0"
-                BackgroundColor="Black"
-                TextColor="White"
-                Clicked="OnBinaryButtonClicked"
-                Style="{StaticResource ButtonStyle}" />
-            <Button
-                x:Name="Button3"
-                Text="0"
-                BackgroundColor="Black"
-                TextColor="White"
-                Clicked="OnBinaryButtonClicked"
-                Style="{StaticResource ButtonStyle}" />
-            <Button
-                x:Name="Button4"
-                Text="0"
-                BackgroundColor="Black"
-                TextColor="White"
-                Clicked="OnBinaryButtonClicked"
-                Style="{StaticResource ButtonStyle}" />
-            <Button
-                x:Name="Button5"
-                Text="0"
-                BackgroundColor="Black"
-                TextColor="White"
-                Clicked="OnBinaryButtonClicked"
-                Style="{StaticResource ButtonStyle}" />
-            <Button
-                x:Name="Button6"
-                Text="0"
-                BackgroundColor="Black"
-                TextColor="White"
-                Clicked="OnBinaryButtonClicked"
-                Style="{StaticResource ButtonStyle}" />
-            <Button
-                x:Name="Button7"
-                Text="0"
-                BackgroundColor="Black"
-                TextColor="White"
-                Clicked="OnBinaryButtonClicked"
-                Style="{StaticResource ButtonStyle}" />
+            <Frame
+                Padding="0"
+                BackgroundColor="Transparent"
+                HasShadow="True"
+                CornerRadius="10"
+                HeightRequest="105"
+                WidthRequest="105">
+                <Button
+                    x:Name="Button0"
+                    Text="0"
+                    BackgroundColor="Black"
+                    TextColor="White"
+                    VerticalOptions="FillAndExpand"
+                    HorizontalOptions="FillAndExpand"
+                    Clicked="OnBinaryButtonClicked"
+                    Style="{StaticResource ButtonStyle}" />
+            </Frame>
+            <Frame
+                Padding="0"
+                BackgroundColor="Transparent"
+                HasShadow="True"
+                CornerRadius="10"
+                HeightRequest="105"
+                WidthRequest="105">
+                <Button
+                    x:Name="Button1"
+                    Text="0"
+                    BackgroundColor="Black"
+                    TextColor="White"
+                    VerticalOptions="FillAndExpand"
+                    HorizontalOptions="FillAndExpand"
+                    Clicked="OnBinaryButtonClicked"
+                    Style="{StaticResource ButtonStyle}" />
+            </Frame>
+            <Frame
+                Padding="0"
+                BackgroundColor="Transparent"
+                HasShadow="True"
+                CornerRadius="10"
+                HeightRequest="105"
+                WidthRequest="105">
+                <Button
+                    x:Name="Button2"
+                    Text="0"
+                    BackgroundColor="Black"
+                    TextColor="White"
+                    VerticalOptions="FillAndExpand"
+                    HorizontalOptions="FillAndExpand"
+                    Clicked="OnBinaryButtonClicked"
+                    Style="{StaticResource ButtonStyle}" />
+            </Frame>
+            <Frame
+                Padding="0"
+                BackgroundColor="Transparent"
+                HasShadow="True"
+                CornerRadius="10"
+                HeightRequest="105"
+                WidthRequest="105">
+                <Button
+                    x:Name="Button3"
+                    Text="0"
+                    BackgroundColor="Black"
+                    TextColor="White"
+                    VerticalOptions="FillAndExpand"
+                    HorizontalOptions="FillAndExpand"
+                    Clicked="OnBinaryButtonClicked"
+                    Style="{StaticResource ButtonStyle}" />
+            </Frame>
+            <Frame
+                Padding="0"
+                BackgroundColor="Transparent"
+                HasShadow="True"
+                CornerRadius="10"
+                HeightRequest="105"
+                WidthRequest="105">
+                <Button
+                    x:Name="Button4"
+                    Text="0"
+                    BackgroundColor="Black"
+                    TextColor="White"
+                    VerticalOptions="FillAndExpand"
+                    HorizontalOptions="FillAndExpand"
+                    Clicked="OnBinaryButtonClicked"
+                    Style="{StaticResource ButtonStyle}" />
+            </Frame>
+            <Frame
+                Padding="0"
+                BackgroundColor="Transparent"
+                HasShadow="True"
+                CornerRadius="10"
+                HeightRequest="105"
+                WidthRequest="105">
+                <Button
+                    x:Name="Button5"
+                    Text="0"
+                    BackgroundColor="Black"
+                    TextColor="White"
+                    VerticalOptions="FillAndExpand"
+                    HorizontalOptions="FillAndExpand"
+                    Clicked="OnBinaryButtonClicked"
+                    Style="{StaticResource ButtonStyle}" />
+            </Frame>
+            <Frame
+                Padding="0"
+                BackgroundColor="Transparent"
+                HasShadow="True"
+                CornerRadius="10"
+                HeightRequest="105"
+                WidthRequest="105">
+                <Button
+                    x:Name="Button6"
+                    Text="0"
+                    BackgroundColor="Black"
+                    TextColor="White"
+                    VerticalOptions="FillAndExpand"
+                    HorizontalOptions="FillAndExpand"
+                    Clicked="OnBinaryButtonClicked"
+                    Style="{StaticResource ButtonStyle}" />
+            </Frame>
+            <Frame
+                Padding="0"
+                BackgroundColor="Transparent"
+                HasShadow="True"
+                CornerRadius="10"
+                HeightRequest="105"
+                WidthRequest="105">
+                <Button
+                    x:Name="Button7"
+                    Text="0"
+                    BackgroundColor="Black"
+                    TextColor="White"
+                    VerticalOptions="FillAndExpand"
+                    HorizontalOptions="FillAndExpand"
+                    Clicked="OnBinaryButtonClicked"
+                    Style="{StaticResource ButtonStyle}" />
+            </Frame>
         </HorizontalStackLayout>
     </VerticalStackLayout>
 
