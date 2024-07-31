@@ -18,17 +18,31 @@
             HorizontalOptions="Center"
             Margin="0,20,0,10" />
 
-        <!-- Button stack for binary input -->
-        <HorizontalStackLayout
-            Spacing="10"
-            HorizontalOptions="Center">
+        <!-- Grid for binary input -->
+        <Grid
+            HorizontalOptions="Center"
+            VerticalOptions="Center"
+            ColumnSpacing="10"
+            RowSpacing="10">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="Auto" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
             <Frame
+                Grid.Column="0"
                 Padding="0"
                 BackgroundColor="Transparent"
                 HasShadow="True"
-                CornerRadius="10"
-                HeightRequest="105"
-                WidthRequest="105">
+                CornerRadius="10">
                 <Button
                     x:Name="Button0"
                     Text="0"
@@ -40,12 +54,11 @@
                     Style="{StaticResource ButtonStyle}" />
             </Frame>
             <Frame
+                Grid.Column="1"
                 Padding="0"
                 BackgroundColor="Transparent"
                 HasShadow="True"
-                CornerRadius="10"
-                HeightRequest="105"
-                WidthRequest="105">
+                CornerRadius="10">
                 <Button
                     x:Name="Button1"
                     Text="0"
@@ -57,12 +70,11 @@
                     Style="{StaticResource ButtonStyle}" />
             </Frame>
             <Frame
+                Grid.Column="2"
                 Padding="0"
                 BackgroundColor="Transparent"
                 HasShadow="True"
-                CornerRadius="10"
-                HeightRequest="105"
-                WidthRequest="105">
+                CornerRadius="10">
                 <Button
                     x:Name="Button2"
                     Text="0"
@@ -74,12 +86,11 @@
                     Style="{StaticResource ButtonStyle}" />
             </Frame>
             <Frame
+                Grid.Column="3"
                 Padding="0"
                 BackgroundColor="Transparent"
                 HasShadow="True"
-                CornerRadius="10"
-                HeightRequest="105"
-                WidthRequest="105">
+                CornerRadius="10">
                 <Button
                     x:Name="Button3"
                     Text="0"
@@ -91,12 +102,11 @@
                     Style="{StaticResource ButtonStyle}" />
             </Frame>
             <Frame
+                Grid.Column="4"
                 Padding="0"
                 BackgroundColor="Transparent"
                 HasShadow="True"
-                CornerRadius="10"
-                HeightRequest="105"
-                WidthRequest="105">
+                CornerRadius="10">
                 <Button
                     x:Name="Button4"
                     Text="0"
@@ -108,12 +118,11 @@
                     Style="{StaticResource ButtonStyle}" />
             </Frame>
             <Frame
+                Grid.Column="5"
                 Padding="0"
                 BackgroundColor="Transparent"
                 HasShadow="True"
-                CornerRadius="10"
-                HeightRequest="105"
-                WidthRequest="105">
+                CornerRadius="10">
                 <Button
                     x:Name="Button5"
                     Text="0"
@@ -125,12 +134,11 @@
                     Style="{StaticResource ButtonStyle}" />
             </Frame>
             <Frame
+                Grid.Column="6"
                 Padding="0"
                 BackgroundColor="Transparent"
                 HasShadow="True"
-                CornerRadius="10"
-                HeightRequest="105"
-                WidthRequest="105">
+                CornerRadius="10">
                 <Button
                     x:Name="Button6"
                     Text="0"
@@ -142,12 +150,11 @@
                     Style="{StaticResource ButtonStyle}" />
             </Frame>
             <Frame
+                Grid.Column="7"
                 Padding="0"
                 BackgroundColor="Transparent"
                 HasShadow="True"
-                CornerRadius="10"
-                HeightRequest="105"
-                WidthRequest="105">
+                CornerRadius="10">
                 <Button
                     x:Name="Button7"
                     Text="0"
@@ -158,7 +165,7 @@
                     Clicked="OnBinaryButtonClicked"
                     Style="{StaticResource ButtonStyle}" />
             </Frame>
-        </HorizontalStackLayout>
+        </Grid>
     </VerticalStackLayout>
 
 </ContentPage>
