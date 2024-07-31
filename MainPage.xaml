@@ -3,7 +3,8 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="BitCalc.MainPage"
              Title="Binary"
-             BackgroundColor="#ECECEC">
+             BackgroundColor="#ECECEC"
+             Shell.BackgroundColor="{StaticResource LightBlue}">
 
     <VerticalStackLayout
         Padding="30,0"
@@ -14,7 +15,8 @@
             x:Name="DecimalLabel"
             Text="Decimal: 0"
             Style="{StaticResource SubHeadline}"
-            HorizontalOptions="Center" />
+            HorizontalOptions="Center"
+            Margin="0,20,0,10" />
 
         <!-- Button stack for binary input -->
         <HorizontalStackLayout
