@@ -10,6 +10,16 @@
         Padding="30,60,30,30"
         Spacing="25">
 
+        <!-- Picker for numeral system selection -->
+        <Picker x:Name="SystemPicker" Title="Select System" SelectedIndexChanged="OnSystemChanged">
+            <Picker.Items>
+                <x:String>Binary</x:String>
+                <x:String>Hexadecimal</x:String>
+                <x:String>Octal</x:String>
+                <x:String>Decimal</x:String>
+            </Picker.Items>
+        </Picker>
+
         <!-- Decimal display label -->
         <Label
             x:Name="DecimalLabel"
@@ -38,135 +48,49 @@
             <Grid.RowDefinitions>
                 <RowDefinition Height="Auto" />
             </Grid.RowDefinitions>
-            <Frame
-                Grid.Column="0"
-                Padding="0"
-                BackgroundColor="Transparent"
-                HasShadow="True"
-                CornerRadius="10">
-                <Button
-                    x:Name="Button0"
-                    Text="0"
-                    BackgroundColor="Black"
-                    TextColor="White"
-                    VerticalOptions="FillAndExpand"
-                    HorizontalOptions="FillAndExpand"
-                    Clicked="OnBinaryButtonClicked"
-                    Style="{StaticResource ButtonStyle}" />
+            <Frame Grid.Column="0" Padding="0" BackgroundColor="Transparent" HasShadow="True" CornerRadius="10">
+                <Button x:Name="Button0" Text="0" BackgroundColor="Black" TextColor="White" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Clicked="OnBinaryButtonClicked" Style="{StaticResource ButtonStyle}" />
             </Frame>
-            <Frame
-                Grid.Column="1"
-                Padding="0"
-                BackgroundColor="Transparent"
-                HasShadow="True"
-                CornerRadius="10">
-                <Button
-                    x:Name="Button1"
-                    Text="0"
-                    BackgroundColor="Black"
-                    TextColor="White"
-                    VerticalOptions="FillAndExpand"
-                    HorizontalOptions="FillAndExpand"
-                    Clicked="OnBinaryButtonClicked"
-                    Style="{StaticResource ButtonStyle}" />
+            <Frame Grid.Column="1" Padding="0" BackgroundColor="Transparent" HasShadow="True" CornerRadius="10">
+                <Button x:Name="Button1" Text="0" BackgroundColor="Black" TextColor="White" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Clicked="OnBinaryButtonClicked" Style="{StaticResource ButtonStyle}" />
             </Frame>
-            <Frame
-                Grid.Column="2"
-                Padding="0"
-                BackgroundColor="Transparent"
-                HasShadow="True"
-                CornerRadius="10">
-                <Button
-                    x:Name="Button2"
-                    Text="0"
-                    BackgroundColor="Black"
-                    TextColor="White"
-                    VerticalOptions="FillAndExpand"
-                    HorizontalOptions="FillAndExpand"
-                    Clicked="OnBinaryButtonClicked"
-                    Style="{StaticResource ButtonStyle}" />
+            <Frame Grid.Column="2" Padding="0" BackgroundColor="Transparent" HasShadow="True" CornerRadius="10">
+                <Button x:Name="Button2" Text="0" BackgroundColor="Black" TextColor="White" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Clicked="OnBinaryButtonClicked" Style="{StaticResource ButtonStyle}" />
             </Frame>
-            <Frame
-                Grid.Column="3"
-                Padding="0"
-                BackgroundColor="Transparent"
-                HasShadow="True"
-                CornerRadius="10">
-                <Button
-                    x:Name="Button3"
-                    Text="0"
-                    BackgroundColor="Black"
-                    TextColor="White"
-                    VerticalOptions="FillAndExpand"
-                    HorizontalOptions="FillAndExpand"
-                    Clicked="OnBinaryButtonClicked"
-                    Style="{StaticResource ButtonStyle}" />
+            <Frame Grid.Column="3" Padding="0" BackgroundColor="Transparent" HasShadow="True" CornerRadius="10">
+                <Button x:Name="Button3" Text="0" BackgroundColor="Black" TextColor="White" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Clicked="OnBinaryButtonClicked" Style="{StaticResource ButtonStyle}" />
             </Frame>
-            <Frame
-                Grid.Column="4"
-                Padding="0"
-                BackgroundColor="Transparent"
-                HasShadow="True"
-                CornerRadius="10">
-                <Button
-                    x:Name="Button4"
-                    Text="0"
-                    BackgroundColor="Black"
-                    TextColor="White"
-                    VerticalOptions="FillAndExpand"
-                    HorizontalOptions="FillAndExpand"
-                    Clicked="OnBinaryButtonClicked"
-                    Style="{StaticResource ButtonStyle}" />
+            <Frame Grid.Column="4" Padding="0" BackgroundColor="Transparent" HasShadow="True" CornerRadius="10">
+                <Button x:Name="Button4" Text="0" BackgroundColor="Black" TextColor="White" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Clicked="OnBinaryButtonClicked" Style="{StaticResource ButtonStyle}" />
             </Frame>
-            <Frame
-                Grid.Column="5"
-                Padding="0"
-                BackgroundColor="Transparent"
-                HasShadow="True"
-                CornerRadius="10">
-                <Button
-                    x:Name="Button5"
-                    Text="0"
-                    BackgroundColor="Black"
-                    TextColor="White"
-                    VerticalOptions="FillAndExpand"
-                    HorizontalOptions="FillAndExpand"
-                    Clicked="OnBinaryButtonClicked"
-                    Style="{StaticResource ButtonStyle}" />
+            <Frame Grid.Column="5" Padding="0" BackgroundColor="Transparent" HasShadow="True" CornerRadius="10">
+                <Button x:Name="Button5" Text="0" BackgroundColor="Black" TextColor="White" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Clicked="OnBinaryButtonClicked" Style="{StaticResource ButtonStyle}" />
             </Frame>
-            <Frame
-                Grid.Column="6"
-                Padding="0"
-                BackgroundColor="Transparent"
-                HasShadow="True"
-                CornerRadius="10">
-                <Button
-                    x:Name="Button6"
-                    Text="0"
-                    BackgroundColor="Black"
-                    TextColor="White"
-                    VerticalOptions="FillAndExpand"
-                    HorizontalOptions="FillAndExpand"
-                    Clicked="OnBinaryButtonClicked"
-                    Style="{StaticResource ButtonStyle}" />
+            <Frame Grid.Column="6" Padding="0" BackgroundColor="Transparent" HasShadow="True" CornerRadius="10">
+                <Button x:Name="Button6" Text="0" BackgroundColor="Black" TextColor="White" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Clicked="OnBinaryButtonClicked" Style="{StaticResource ButtonStyle}" />
             </Frame>
-            <Frame
-                Grid.Column="7"
-                Padding="0"
-                BackgroundColor="Transparent"
-                HasShadow="True"
-                CornerRadius="10">
-                <Button
-                    x:Name="Button7"
-                    Text="0"
-                    BackgroundColor="Black"
-                    TextColor="White"
-                    VerticalOptions="FillAndExpand"
-                    HorizontalOptions="FillAndExpand"
-                    Clicked="OnBinaryButtonClicked"
-                    Style="{StaticResource ButtonStyle}" />
+            <Frame Grid.Column="7" Padding="0" BackgroundColor="Transparent" HasShadow="True" CornerRadius="10">
+                <Button x:Name="Button7" Text="0" BackgroundColor="Black" TextColor="White" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Clicked="OnBinaryButtonClicked" Style="{StaticResource ButtonStyle}" />
             </Frame>
         </Grid>
+
+        <!-- Bitwise operation buttons -->
+        <HorizontalStackLayout HorizontalOptions="Center" VerticalOptions="Center" Spacing="10" Margin="0,20,0,0">
+            <Button Text="AND" Clicked="OnAnd" />
+            <Button Text="OR" Clicked="OnOr" />
+            <Button Text="XOR" Clicked="OnXor" />
+            <Button Text="NOT" Clicked="OnNot" />
+        </HorizontalStackLayout>
+
+        <!-- History ListView -->
+        <ListView x:Name="HistoryListView" VerticalOptions="FillAndExpand">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <TextCell Text="{Binding .}" />
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+
     </VerticalStackLayout>
 
 </ContentPage>
