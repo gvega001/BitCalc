@@ -3,29 +3,14 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="BitCalc.App">
     <Application.Resources>
-        <!-- Define colors -->
-        <Color x:Key="DarkBlue">#1E3A8A</Color>
-        <Color x:Key="LightBlue">#4A90E2</Color>
-
-        <!-- Define styles here -->
-        <Style x:Key="ButtonStyle" TargetType="Button">
-            <Setter Property="BackgroundColor" Value="Black"/>
-            <Setter Property="TextColor" Value="White"/>
-            <Setter Property="FontSize" Value="24"/>
-            <Setter Property="Margin" Value="5"/>
-            <Setter Property="HeightRequest" Value="105"/>
-            <Setter Property="WidthRequest" Value="105"/>
-        </Style>
-        <Style x:Key="Headline" TargetType="Label">
-            <Setter Property="FontSize" Value="24"/>
-            <Setter Property="TextColor" Value="{StaticResource DarkBlue}"/>
-            <Setter Property="HorizontalOptions" Value="Center"/>
-        </Style>
-        <Style x:Key="SubHeadline" TargetType="Label">
-            <Setter Property="FontSize" Value="20"/>
-            <Setter Property="TextColor" Value="{StaticResource DarkBlue}"/>
-            <Setter Property="HorizontalOptions" Value="Center"/>
-            <Setter Property="Margin" Value="10,20,10,10"/>
-        </Style>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Styles.xaml" />
+                <ResourceDictionary>
+                    <!-- Define colors here -->
+                    <Color x:Key="LightBlue">#ADD8E6</Color>
+                </ResourceDictionary>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
     </Application.Resources>
 </Application>
