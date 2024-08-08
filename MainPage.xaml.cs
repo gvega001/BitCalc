@@ -1,4 +1,6 @@
-﻿using System.Collections.ObjectModel;
+﻿using System;
+using System.Collections.ObjectModel;
+using Microsoft.Maui.Controls;
 
 namespace BitCalc
 {
@@ -96,6 +98,21 @@ namespace BitCalc
         private string GetBinaryString()
         {
             return $"{Button0.Text}{Button1.Text}{Button2.Text}{Button3.Text}{Button4.Text}{Button5.Text}{Button6.Text}{Button7.Text}";
+        }
+
+        private void OnDeleteSwipeItemInvoked(object sender, EventArgs e)
+        {
+            var swipeItem = sender as SwipeItem;
+            var item = swipeItem?.BindingContext as string;
+            if (item != null)
+            {
+                _history.Remove(item);
+            }
+        }
+
+        private void OnHistoryDoubleTapped(object sender, EventArgs e)
+        {
+            _history.Clear();
         }
     }
 }

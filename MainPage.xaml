@@ -71,9 +71,23 @@
         <ListView x:Name="HistoryListView" VerticalOptions="FillAndExpand">
             <ListView.ItemTemplate>
                 <DataTemplate>
-                    <TextCell Text="{Binding .}" TextColor="Black"/>
+                    <ViewCell>
+                        <SwipeView>
+                            <SwipeView.RightItems>
+                                <SwipeItems>
+                                    <SwipeItem Text="Delete" BackgroundColor="Red" Invoked="OnDeleteSwipeItemInvoked"/>
+                                </SwipeItems>
+                            </SwipeView.RightItems>
+                            <Grid>
+                                <Label Text="{Binding .}" TextColor="Black" VerticalOptions="Center" HorizontalOptions="Start"/>
+                            </Grid>
+                        </SwipeView>
+                    </ViewCell>
                 </DataTemplate>
             </ListView.ItemTemplate>
+            <ListView.GestureRecognizers>
+                <TapGestureRecognizer NumberOfTapsRequired="2" Tapped="OnHistoryDoubleTapped"/>
+            </ListView.GestureRecognizers>
         </ListView>
 
     </VerticalStackLayout>
